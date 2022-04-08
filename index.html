@@ -15,8 +15,17 @@ body {
 
 .textwhite {
   color: #ffffff;
+  font-family: 'Nova Square';
+  font-size: 40px;
 }
 
+.backgroundwhite {
+  background-color: #ffffff;
+}
+
+.textyellow {
+  color: #0740fd;
+}
 
 .mainstickercenter {
   display: block;
@@ -27,8 +36,8 @@ body {
 
 /* Style the header */
 .header {
-  background-color: #f65a5b;
-  padding: 3px;
+  background: linear-gradient(45deg,#ee9ae5,#5961f9);
+  padding: 2px;
   text-align: center;
 }
 
@@ -68,6 +77,24 @@ body {
 /* Middle column */
 .column.middle {
   width: auto;
+  background-color: #e1e1e1;
+}
+
+.textoverlay {
+  position: absolute;
+  top: -20px;
+  left: 100px;
+}
+
+.subtextoverlay {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+}
+
+.bannertext {
+  color: #0a0900;
+  font-size: 80px;
 }
 
 /* Clear floats after the columns */
@@ -75,6 +102,64 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+.rowhash {
+  background-color: #F9F8F4;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowline {
+  background-color: #ffffff;
+  content: "";
+  display: table;
+  clear: both;
+  height: 10px;
+  width: auto;
+}
+
+.cardcolumn {
+  max-width: 33%;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+
+.cardimage {
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 95%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.cardcolumn:hover .overlay {
+  opacity: 1;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -86,17 +171,17 @@ body {
 
 /* Style the footer */
 .footer {
-  background-color: #f65a5b;
+  background: linear-gradient(45deg,#ee9ae5,#5961f9);
   padding: 10px;
   text-align: center;
 }
+
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1 class="textwhite">JAYARAMA JEWELLERS</h1>
-  <h3 class="textwhite">Karimnagar</h3>
 </div>
 
 <!-- <div class="topnav">
@@ -112,17 +197,63 @@ body {
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
   </div> -->
   
-  <div class="column middle">
-    <img class="mainstickercenter" src="jrjpics/JRJsticker.jpg">
-  </div>
+   <!-- <div class="column middle">
+   <img class="mainstickercenter" src="C:\Users\e004528\Downloads\HTML\JRJsticker.jpg">
+  </div> -->
   
   <!-- <div class="column side">
     <h2>Side</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
   </div> -->
 </div>
+<div class="container">
+  <!-- <div class="textoverlay"> 
+    <h1 class="bannertext">JAYARAMA</h1> 
+  </div>
+  <div class="subtextoverlay"> 
+    <h1 class="bannertext">JEWELLERS</h1> 
+  </div> -->
+  <img width="100%" src="C:\Users\e004528\Downloads\HTML\ringsbanner.jpg">
+</div>
 
+<div class="rowhash">
+  <div class="cardcolumn">
+    <img class="cardimage" src="C:\Users\e004528\Downloads\HTML\earrings.jpg">
+    <h2>EarRings</h2>
+    <div class="overlay">Buy Now<br>Coming soon</div>
+  </div>
+  <div class="cardcolumn">
+    <img class="cardimage" src="C:\Users\e004528\Downloads\HTML\neklace2.jpg">
+    <h2>Necklaces</h2>
+    <div class="overlay">Buy Now<br>Coming soon</div>
+  </div>
+  <div class="cardcolumn">
+    <img class="cardimage" src="C:\Users\e004528\Downloads\HTML\bangles3.jpg">
+    <h2>Bangles</h2>
+    <div class="overlay">Buy Now<br>Coming soon</div>
+  </div>
+  </div>
+</div>
+<div class="rowline"></div>
 
+<div class="rowhash">
+  <div class="cardcolumn">
+    <img class="cardimage" src="C:\Users\e004528\Downloads\HTML\bracelet2.jpg">
+    <h2>Bracelets</h2>
+    <div class="overlay">Buy Now<br>Coming soon</div>
+  </div>
+  <div class="cardcolumn">
+    <img class="cardimage" src="C:\Users\e004528\Downloads\HTML\mangalsutra2.jpg">
+    <h2>Mangalsutra</h2>
+    <div class="overlay">Buy Now<br>Coming soon</div>
+  </div>
+  <div class="cardcolumn">
+    <img class="cardimage" src="C:\Users\e004528\Downloads\HTML\weddingrings3.jpg">
+    <h2>Wedding Rings</h2>
+    <div class="overlay">Buy Now<br>Coming soon</div>
+  </div>
+  </div>
+</div>
 
 <div class="footer">
   <p>Please Visit Again</p>
